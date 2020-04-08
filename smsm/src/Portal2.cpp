@@ -11,7 +11,7 @@ void Portal2::LoadOffsets()
 {
     using namespace Offsets;
 
-    // engine.dll
+    // engine.so
 
     InternalSetValue = 19; // ConVar
     InternalSetFloatValue = 20; // ConVar
@@ -39,7 +39,7 @@ void Portal2::LoadOffsets()
     PrecacheModel = 62; // IEngineTool TODO - Find what this offset it
     GetWorldToScreenMatrixForView = 80; // IEngineTool TODO - Find what this offset it
 
-    // client.dll
+    // client.so
 
     GetHud = 104; // cc_leaderboard_enable
     FindElement = 120; // cc_leaderboard_enable
@@ -47,7 +47,7 @@ void Portal2::LoadOffsets()
     RenderView = 26; // TODO - Find what this offset it
     HudUpdate = 11;
 
-    // server.dll
+    // server.so
     m_hActiveWeapon = 2140; // CBaseEntity TODO - Find what this offset it
     m_bCanFirePortal1 = 1500; // CBaseEntity TODO - Find what this offset it
     UTIL_PlayerByIndex = 61; // CServerGameDLL::Think
@@ -55,23 +55,23 @@ void Portal2::LoadOffsets()
     Think = 31; // CServerGameDLL
     m_hGroundEntity = 344; // CBaseEntity TODO - Find what this offset it
 
-    // vstdlib.dll
+    // vstdlib.so
 
     RegisterConCommand = 9; // CCVar
     UnregisterConCommand = 10; // CCvar
     FindCommandBase = 13; // CCVar
     m_pConCommandList = 48; // CCvar
 
-    // vscript.dll
+    // vscript.so
 
     CreateVM = 8; // TODO - Find what this offset it
 
-    // vgui2.dll
+    // vgui2.so
 
     GetIScheme = 9; // CSchemeManager
     GetFont = 4; // CScheme
 
-    // vguimatsurface.dll
+    // vguimatsurface.so
 
     DrawSetColor = 13; // CMatSystemSurface
     DrawFilledRect = 15; // CMatSystemSurface
