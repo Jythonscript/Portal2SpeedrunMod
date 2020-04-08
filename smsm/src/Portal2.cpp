@@ -13,47 +13,47 @@ void Portal2::LoadOffsets()
 
     // engine.dll
 
-    InternalSetValue = 12; // ConVar
-    InternalSetFloatValue = 13; // ConVar
-    InternalSetIntValue = 14; // ConVar
+    InternalSetValue = 19; // ConVar
+    InternalSetFloatValue = 20; // ConVar
+    InternalSetIntValue = 21; // ConVar
     ClientCmd = 7; // CEngineClient
-    GetClientStateFunction = 4; // CEngineClient::ClientCmd
-    Cbuf_AddText = 46; // CEngineClient::ClientCmd
-    s_CommandBuffer = 82; // Cbuf_AddText
+    GetClientStateFunction = 11; // CEngineClient::ClientCmd
+    Cbuf_AddText = 45; // CEngineClient::ClientCmd
+    s_CommandBuffer = 69; // Cbuf_AddText
     CCommandBufferSize = 9556; // Cbuf_AddText
     m_bWaitEnabled = 8265; // CCommandBuffer::AddText
     GetActiveSplitScreenPlayerSlot = 127; // CEngineClient
-    SetSignonState = 15; // CClientState
-    HostState_OnClientConnected = 684; // CClientState::SetSignonState
-    hoststate = 1; // HostState_OnClientConnected
-    AutoCompletionFunc = 66; // listdemo_CompletionFunc
+    SetSignonState = 3; // CClientState
+    HostState_OnClientConnected = 735; // CClientState::SetSignonState
+    hoststate = 735; // HostState_OnClientConnected
+    AutoCompletionFunc = 37; // listdemo_CompletionFunc
     ClientCommand = 39; // CVEngineServer
-    TraceRay = 5; // IEngineTrace
-    NextParticleSystem = 54; //IClientTools
-    ProcessMovement = 1; // CGameMovement
-    m_fFlags = 204; // CBaseEntity
-    m_nTickBase = 3792; // CBaseEntity
-    m_bDucking = 2272; // CBaseEntity
-    m_hUseEntity = 2960; // CBaseEntity
+    TraceRay = 5; // IEngineTrace TODO - Find what this offset it
+    NextParticleSystem = 54; //IClientTools TODO - Find what this offset it
+    ProcessMovement = 2; // CGameMovement
+    m_fFlags = 204; // CBaseEntity TODO - Find what this offset it
+    m_nTickBase = 3792; // CBaseEntity TODO - Find what this offset it
+    m_bDucking = 2272; // CBaseEntity TODO - Find what this offset it
+    m_hUseEntity = 2960; // CBaseEntity TODO - Find what this offset it
     GetScreenSize = 5; // CEngineClient
-    PrecacheModel = 62; // IEngineTool
-    GetWorldToScreenMatrixForView = 80; // IEngineTool
+    PrecacheModel = 62; // IEngineTool TODO - Find what this offset it
+    GetWorldToScreenMatrixForView = 80; // IEngineTool TODO - Find what this offset it
 
     // client.dll
 
-    GetHud = 125; // cc_leaderboard_enable
-    FindElement = 135; // cc_leaderboard_enable
-    ChatPrintf = 22; // CBaseHudChat
-    RenderView = 26;
+    GetHud = 104; // cc_leaderboard_enable
+    FindElement = 120; // cc_leaderboard_enable
+    ChatPrintf = 22; // CBaseHudChat TODO - Find what this offset it
+    RenderView = 26; // TODO - Find what this offset it
     HudUpdate = 11;
 
     // server.dll
-    m_hActiveWeapon = 2140; // CBaseEntity
-    m_bCanFirePortal1 = 1500; // CBaseEntity
-    UTIL_PlayerByIndex = 39; // CServerGameDLL::Think
-    gpGlobals = 14; // UTIL_PlayerByIndex
+    m_hActiveWeapon = 2140; // CBaseEntity TODO - Find what this offset it
+    m_bCanFirePortal1 = 1500; // CBaseEntity TODO - Find what this offset it
+    UTIL_PlayerByIndex = 61; // CServerGameDLL::Think
+    gpGlobals = 12; // UTIL_PlayerByIndex
     Think = 31; // CServerGameDLL
-    m_hGroundEntity = 344; // CBaseEntity
+    m_hGroundEntity = 344; // CBaseEntity TODO - Find what this offset it
 
     // vstdlib.dll
 
@@ -64,38 +64,38 @@ void Portal2::LoadOffsets()
 
     // vscript.dll
 
-    CreateVM = 8;
+    CreateVM = 8; // TODO - Find what this offset it
 
     // vgui2.dll
 
-    GetIScheme = 8; // CSchemeManager
-    GetFont = 3; // CScheme
+    GetIScheme = 9; // CSchemeManager
+    GetFont = 4; // CScheme
 
     // vguimatsurface.dll
 
-    DrawSetColor = 14; // CMatSystemSurface
+    DrawSetColor = 13; // CMatSystemSurface
     DrawFilledRect = 15; // CMatSystemSurface
     DrawLine = 18; // CMatSystemSurface
     DrawSetTextFont = 22; // CMatSystemSurface
-    DrawSetTextColor = 23; // CMatSystemSurface
+    DrawSetTextColor = 24; // CMatSystemSurface
     GetFontTall = 72; // CMatSystemSurface
     PaintTraverseEx = 117; // CMatSystemSurface
-    StartDrawing = 127; // CMatSystemSurface::PaintTraverseEx
-    FinishDrawing = 603; // CMatSystemSurface::PaintTraverseEx
+    StartDrawing = 193; // CMatSystemSurface::PaintTraverseEx
+    FinishDrawing = 590; // CMatSystemSurface::PaintTraverseEx
     DrawColoredText = 160; // CMatSystemSurface
     DrawTextLen = 163; // CMatSystemSurface
-    DisableClipping = 156; // CMatSystemSurface
-    Paint = 14; // CEngineVGui
+    DisableClipping = 156; // CMatSystemSurface TODO - Find what this offset it
+    Paint = 14; // CEngineVGui TODO - Find what this offset it (found in engine.so to be 15, but probably isn't the same here)
 
-    DrawGetTextureId = 33; // CMatSystemSurface
-    DrawGetTextureFile = 34; // CMatSystemSurface
-    DrawSetTextureFile = 35; // CMatSystemSurface
-    DrawSetTextureRGBA = 36; // CMatSystemSurface
-    DrawSetTexture = 37; // CMatSystemSurface
-    DrawGetTextureSize = 38; // CMatSystemSurface
-    DrawTexturedRect = 39; // CMatSystemSurface
-    IsTextureIDValid = 40; // CMatSystemSurface
-    CreateNewTextureID = 41; // CMatSystemSurface
+    DrawGetTextureId = 33; // CMatSystemSurface TODO - Find what this offset it
+    DrawGetTextureFile = 34; // CMatSystemSurface TODO - Find what this offset it
+    DrawSetTextureFile = 35; // CMatSystemSurface TODO - Find what this offset it
+    DrawSetTextureRGBA = 36; // CMatSystemSurface TODO - Find what this offset it
+    DrawSetTexture = 37; // CMatSystemSurface TODO - Find what this offset it
+    DrawGetTextureSize = 38; // CMatSystemSurface TODO - Find what this offset it
+    DrawTexturedRect = 39; // CMatSystemSurface TODO - Find what this offset it
+    IsTextureIDValid = 40; // CMatSystemSurface TODO - Find what this offset it
+    CreateNewTextureID = 41; // CMatSystemSurface TODO - Find what this offset it
 }
 const char* Portal2::Version()
 {
